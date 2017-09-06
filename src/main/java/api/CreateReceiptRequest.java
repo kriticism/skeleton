@@ -12,7 +12,11 @@ import java.math.BigDecimal;
  * endpoint.  See {@link controllers.ReceiptController#createReceipt(CreateReceiptRequest)} for
  * and example.
  */
+// An obhect that documents the RESTful API
+// has two fields that can possibly be specified
 public class CreateReceiptRequest {
+    // a validation annotation, Merchant Name is required
+    // hibernate validator is run
     @NotEmpty
     public String merchant;
 
